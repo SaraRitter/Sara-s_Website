@@ -1,0 +1,400 @@
+#header a {
+  font-family: "Arvo", serif;
+  display: flex;
+  text-shadow: 1px 2px rgb(214, 214, 214);
+  justify-content: center;
+  color: #ed786a;
+  letter-spacing: 0.45rem;
+  text-decoration: none;
+  font-size: 2.3vw;
+}
+
+.small-text {
+  font-size: 0.8vw;
+  text-align: justify;
+  color: rgb(136, 136, 136);
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+}
+
+.medium-text {
+  font-size: 1.5vw;
+  text-align: justify;
+  color: rgb(136, 136, 136);
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  margin-bottom: 20px;
+}
+strong {
+  color: rgb(117, 117, 117);
+}
+
+a[href]:hover,
+a[href]:hover strong {
+  color: #ed786a !important;
+}
+
+#quote > strong {
+  color: white;
+}
+.small-header {
+  letter-spacing: 0.05rem;
+}
+
+hr {
+  border: solid rgb(232, 232, 232) 0.5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+i {
+  opacity: 0.5;
+}
+
+#home-top > p.subheader {
+  margin-top: 45px;
+}
+
+#header > h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 0.7vw;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+}
+
+.three-images div p {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.QandA-title {
+  text-align: center;
+  font-size: 1.5vw;
+  padding-top: 40px;
+}
+
+.footer-text {
+  letter-spacing: 0.05rem;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#footer-contact-details {
+  text-align: center;
+  letter-spacing: 0.05rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20px 1fr 20px 1fr;
+  grid-template-rows: repeat(4, 20px);
+  grid-template-areas:
+    "fa-home address fa-twitter twitter"
+    ". address fa-instagram instagram"
+    "fa-phone phone-number fa-dribbble dribbble"
+    "fa-envelope email fa-facebook facebook";
+}
+
+.three-images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+img {
+  border: 3px solid rgb(231, 231, 231);
+}
+
+.three-images div img {
+  width: 15vw;
+  height: 10vw;
+}
+
+#home-top > div > div:nth-child(2) > img {
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.paragraph-header {
+  margin-bottom: 0px;
+  margin-top: 2em;
+}
+
+#home-top {
+  margin-bottom: 50px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#stretch {
+  width: 100%;
+}
+
+#quote-container {
+  background-color: grey;
+  height: 27vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.date {
+  background-color: #878787;
+  width: fit-content;
+  padding: 3px 7px;
+  border-radius: 2px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.65vw;
+  letter-spacing: 0.05rem;
+  box-shadow: 1px 1px rgb(214, 214, 214);
+  margin-bottom: 20px;
+}
+
+#quote {
+  color: white;
+  font-size: 2.8vh;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.15rem;
+}
+
+.quote-brackets {
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: lighter;
+  font-size: 6vw;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 40px;
+  grid-template-areas: ". main-articles sidebar .";
+  margin-top: 50px;
+}
+
+.articles-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 40px;
+  grid-template-areas: ". sidebar main-articles .";
+  margin-top: 50px;
+}
+
+.articles-post-only {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 40px;
+  grid-template-areas: ". main-articles .";
+  margin-top: 50px;
+}
+
+.main-articles {
+  grid-area: main-articles;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+.sidebar-article-wrapper {
+  margin-bottom: 20px;
+}
+
+.sidebar-article-wrapper hr {
+  margin-top: 20px;
+}
+
+.sidebar-article-wrapper img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 10vw;
+  height: 10vw;
+}
+
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(255, 255, 255, 0.884);
+  background-color: #ed786a;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8vw;
+  width: 10vw;
+  height: 2.4vw;
+  box-shadow: 1px 1px lightgray;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  margin: 1.5vw 0;
+}
+
+button:hover {
+  background-color: rgb(238, 146, 136);
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #f3f3f3;
+}
+
+#footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: ". footer-content .";
+}
+
+#footer-content-wrapper {
+  grid-area: footer-content;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 50% 50%;
+}
+
+.centered {
+  text-align: center;
+}
+
+#features {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-gap: 5px;
+  grid-template-areas:
+    "name-input email-input"
+    "message-input message-input";
+}
+
+#name-input {
+  grid-area: name-input;
+}
+
+#email-input {
+  grid-area: email-input;
+}
+
+#message-input {
+  grid-area: message-input;
+}
+
+form input,
+textarea {
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+  border-style: inset;
+  background-color: rgb(250, 250, 250);
+}
+
+form input:focus,
+textarea:focus {
+  outline: darkgray auto;
+  background-color: white;
+}
+
+#footer-contact-details > a > i {
+  background-color: darkgray;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.5vw;
+  padding: 3px;
+}
+
+.fa-home {
+  grid-area: fa-home;
+}
+
+#address {
+  grid-area: address;
+}
+
+/*Just showing that this can be an inline style. Leaving in for later refactoring*/
+/* .fa-twitter { 
+    grid-area: fa-twitter;
+} */
+
+#twitter {
+  grid-area: twitter;
+}
+
+.fa-instagram {
+  grid-area: fa-instagram;
+}
+
+#instagram {
+  grid-area: instagram;
+}
+
+.fa-phone {
+  grid-area: fa-phone;
+}
+
+#phone-number {
+  grid-area: phone-number;
+}
+
+.fa-dribbble {
+  grid-area: fa-dribbble;
+}
+
+#dribbble {
+  grid-area: dribbble;
+}
+
+.fa-envelope {
+  grid-area: fa-envelope;
+}
+
+#email {
+  grid-area: email;
+}
+
+.fa-facebook {
+  grid-area: fa-facebook;
+}
+
+#facebook {
+  grid-area: facebook;
+}
+
+div#footer-contact-details i {
+  background-color: rgb(59, 59, 59);
+  border-radius: 50%;
+  font-size: 10px;
+  vertical-align: middle;
+  color: white;
+  box-shadow: 2px 2px rgb(190, 190, 190);
+  padding-top: 0.3vw;
+}
+
+.image-with-text {
+  margin-top: 10px;
+}
+
+.image-with-text img {
+  margin-top: 4px;
+}
+
+#sidebar > div:nth-child(5) > div:nth-child(3) > img {
+  height: 6.67vw !important;
+}
