@@ -328,10 +328,6 @@ textarea:focus {
   grid-area: address;
 }
 
-/*Just showing that this can be an inline style. Leaving in for later refactoring*/
-/* .fa-twitter { 
-    grid-area: fa-twitter;
-} */
 
 #twitter {
   grid-area: twitter;
